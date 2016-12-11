@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-lg-6">
+    <h1 class="page-header">Leaderboard (Overall)</h1>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Score</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="leader in $ctrl.leadersOverall">
+        <th scope="row">{{$index + 1}}</th>
+        <th>{{leader.username}}</th>
+        <th>{{leader.score}}</th>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-lg-6">
+    <h1 class="page-header">Leaderboard (Weekly)</h1>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Score</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="leader in $ctrl.leadersWeekly">
+        <th scope="row">{{$index + 1}}</th>
+        <th>{{leader.username}}</th>
+        <th>{{leader.score}}</th>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

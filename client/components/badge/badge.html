@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">Badges</h1>
+    <div>
+          <span uib-tooltip="{{badge.info}}"
+                class="label label-default"
+                ng-class="{'label label-success': badge.earned}"
+                ng-repeat="badge in $ctrl.badges"
+                style="margin-right: 5px;">
+            {{badge.name}}
+          </span>
+    </div>
+  </div>
+</div>
