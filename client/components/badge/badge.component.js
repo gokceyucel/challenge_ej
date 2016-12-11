@@ -25,7 +25,9 @@ export class BadgeController {
       const userOwnedBadgeNames = this.getCurrentUser().badges.map(userBadge => userBadge.name);
 
       // mark user earned badges
-      badges.forEach(badge => badge.earned = userOwnedBadgeNames.includes(badge.name));
+      badges.forEach(badge => {
+        badge.earned = userOwnedBadgeNames.includes(badge.name);
+      });
       this.badges = badges;
     });
   }

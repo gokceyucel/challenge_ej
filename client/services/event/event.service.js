@@ -13,8 +13,7 @@ export function EventService($http, AuthService) {
   let addBadgeScore = (badge, user_id) =>
     $http
       .post('/api/user_scores', {
-        user_id: user_id,
-        // badge_id: badge._id,
+        user_id,
         type: 'badge',
         score: badge.score
       });

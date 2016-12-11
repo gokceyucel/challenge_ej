@@ -5,11 +5,6 @@ import uiRouter from 'angular-ui-router';
 import routes from './main.routes';
 
 export class MainController {
-
-  /*@ngInject*/
-  constructor() {
-  }
-
 }
 
 export default angular.module('emlakjetChallengeApp.main', [uiRouter])

@@ -34,7 +34,6 @@ export class LeaderboardController {
           this.$http
             .get('/api/users')
             .then(response => {
-
               // filter results for leader users
               let userIdsNames = response.data
                 .map(user => ({user_id: user._id, username: user.name}))
